@@ -18,4 +18,41 @@ function placeOrder() {
 }
 placeOrder();
 
+---------------------------------------------
+
+const Airplane = require('./1-airplane.js');
+
+function displayAirplane() {
+  console.log(Airplane.myAirplane);
+}
+displayAirplane();*/
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+-------export default---------
+
+let Airplane = {};
+
+Airplane.availableAirplanes = [
+{
+  name: 'AeroJet',
+  fuelCapacity: 800
+ },
+ {name: 'SkyJet',
+  fuelCapacity: 500
+ }
+];
+export default Airplane;
 */
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+-----------import-------------
+
+import Airplane from './airplane';
+
+function displayFuelCapacity() {
+  Airplane.availableAirplanes.forEach(function(element){
+  console.log('Fuel Capacity of ' + element.name + ': ' + element.fuelCapacity);
+  });
+}
+displayFuelCapacity();
+ */
